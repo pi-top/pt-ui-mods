@@ -1,11 +1,11 @@
-Source: raspberrypi-ui-mods
+Source: pt-ui-mods
 Section: x11
 Priority: extra
 Maintainer: Serge Schneider <serge@raspberrypi.org>
 Build-Depends: debhelper (>= 8.1.0~)
 Standards-Version: 3.9.6
 
-Package: raspberrypi-ui-mods
+Package: pt-ui-mods
 Architecture: all
 Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, xserver-xorg,
  x11-xserver-utils, policykit-1, lightdm, raspberrypi-sys-mods, 

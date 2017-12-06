@@ -1,5 +1,5 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: raspberrypi-ui-mods
+Upstream-Name: pt-ui-mods
 
 Files: *
 Copyright: 2015-2016 Simon Long <simon@raspberrypi.org>

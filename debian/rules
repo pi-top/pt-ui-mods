@@ -20,4 +20,4 @@ override_dh_shlibdeps:
 
 #override_dh_installdeb:
 #	dh_installdeb
-#	rm debian/raspberrypi-ui-mods/DEBIAN/conffiles
+#	rm debian/pt-ui-mods/DEBIAN/conffiles
