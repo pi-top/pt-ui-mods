@@ -1,0 +1,4 @@
+@lxpanel --profile LXDE-pt
+@pcmanfm --desktop --profile LXDE-pt
+@xscreensaver -no-splash
+@point-rpi
