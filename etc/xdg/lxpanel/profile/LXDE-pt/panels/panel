@@ -2,51 +2,45 @@
 # Use preference dialog in lxpanel to adjust config when you can.
 
 Global {
-  edge=top
+  edge=bottom
   allign=left
   margin=0
   widthtype=percent
   width=100
   height=36
-  transparent=0
-  tintcolor=#000000
-  alpha=0
+  transparent=1
+  tintcolor=#ffffff
+  alpha=127
   autohide=0
   heightwhenhidden=2
   setdocktype=1
   setpartialstrut=1
   usefontcolor=0
   fontsize=12
-  fontcolor=#ffffff
+  fontcolor=#000000
   usefontsize=0
   background=0
   backgroundfile=/usr/share/lxpanel/images/background.png
   iconsize=36
 }
 Plugin {
-  type=space
-  Config {
-    Size=4
-  }
-}
-Plugin {
   type=menu
   Config {
-    image=/usr/share/raspberrypi-artwork/launch.png
+    image=/usr/share/raspberrypi-artwork/menu.png
     system {
     }
     separator {
     }
     item {
       name=Run...
-      image=system-run
+      image=gnome-run
       command=run
     }
     separator {
     }
     item {
       name=Shutdown...
-      image=system-shutdown
+      image=gnome-logout
       command=logout
     }
   }
@@ -54,14 +48,14 @@ Plugin {
 Plugin {
   type=space
   Config {
-    Size=8
+    Size=32
   }
 }
 Plugin {
   type=launchbar
   Config {
     Button {
-      id=lxde-x-www-browser.desktop
+      id=/usr/share/applications/chromium-browser.desktop
     }
     Button {
       id=pcmanfm.desktop
@@ -70,17 +64,20 @@ Plugin {
       id=lxterminal.desktop
     }
     Button {
-      id=wolfram-mathematica.desktop
+      id=/usr/share/applications/ceed-universe.desktop
     }
     Button {
-      id=wolfram-language.desktop
+      id=/usr/share/applications/3d-slash.desktop
+    }
+    Button {
+      id=wolfram-mathematica.desktop
     }
   }
 }
 Plugin {
   type=space
   Config {
-    Size=8
+    Size=24
   }
 }
 Plugin {
@@ -95,7 +92,7 @@ Plugin {
     FlatButton=0
     MaxTaskWidth=200
     spacing=1
-    GroupedTasks=0
+    GroupedTasks=1
   }
 }
 Plugin {
@@ -110,7 +107,7 @@ Plugin {
   }
 }
 Plugin {
-  type=bluetooth
+  type=ptdash
   Config {
   }
 }
@@ -132,7 +129,7 @@ Plugin {
   }
 }
 Plugin {
-  type=volumealsabt
+  type=volumealsa
   Config {
   }
 }
@@ -143,18 +140,10 @@ Plugin {
   }
 }
 Plugin {
-  type=cpu
-  Config {
-    ShowPercent=1
-    Foreground=#a9a9a9a9a9a9
-    Background=#d3d3d3d3d3d3
-  }
-}
-Plugin {
   type=dclock
   Config {
-    ClockFmt=%R
-    TooltipFmt=%A %x
+    ClockFmt=%a %R
+    TooltipFmt=%x
     BoldFont=0
     IconOnly=0
     CenterText=1
