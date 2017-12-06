@@ -1,0 +1,101 @@
+#!/bin/sh
+
+export XDG_DATA_DIRS="/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg"
+
+if [ -z "$XDG_CONFIG_HOME" ]; then
+  export XDG_CONFIG_HOME="$HOME/.config"
+fi
+
+# Ensure the existence of pcmanfm config file
+PCMANFM_CONF_DIR="$XDG_CONFIG_HOME/pcmanfm/LXDE-pt"
+if [ ! -f "$PCMANFM_CONF_DIR/pcmanfm.conf" ]; then
+  mkdir -p "$PCMANFM_CONF_DIR"
+  cp /etc/xdg/pcmanfm/LXDE-pt/pcmanfm.conf "$PCMANFM_CONF_DIR/pcmanfm.conf"
+fi
+if [ ! -f "$PCMANFM_CONF_DIR/desktop-items-0.conf" ]; then
+  mkdir -p "$PCMANFM_CONF_DIR"
+  cp /etc/xdg/pcmanfm/LXDE-pt/desktop-items-0.conf "$PCMANFM_CONF_DIR/desktop-items-0.conf"
+fi
+
+# Ensure the existence of openbox config file
+OPENBOX_CONF_DIR="$XDG_CONFIG_HOME/openbox"
+if [ ! -f "$OPENBOX_CONF_DIR/lxde-pt-rc.xml" ]; then
+  mkdir -p "$OPENBOX_CONF_DIR"
+  cp /etc/xdg/openbox/lxde-pt-rc.xml "$OPENBOX_CONF_DIR/lxde-pt-rc.xml"
+fi
+
+# Ensure the existence of lxsession config file
+LXSESSION_CONF_DIR="$XDG_CONFIG_HOME/lxsession/LXDE-pt"
+if [ ! -f "$LXSESSION_CONF_DIR/desktop.conf" ]; then
+  mkdir -p "$LXSESSION_CONF_DIR"
+  cp /etc/xdg/lxsession/LXDE-pt/desktop.conf "$LXSESSION_CONF_DIR/desktop.conf"
+fi
+if [ ! -f "$LXSESSION_CONF_DIR/autostart" ]; then
+  mkdir -p "$LXSESSION_CONF_DIR"
+  cp /etc/xdg/lxsession/LXDE-pt/autostart "$LXSESSION_CONF_DIR/autostart"
+fi
+if [ ! -f "$LXSESSION_CONF_DIR/autokey.sh" ]; then
+  mkdir -p "$LXSESSION_CONF_DIR"
+  cp /etc/xdg/lxsession/LXDE-pt/autokey.sh "$LXSESSION_CONF_DIR/autokey.sh"
+fi
+
+# Copy PiX theme into home directory
+THEME_DIR="$HOME/.themes"
+if [ ! -d "$THEME_DIR/PiX" ]; then
+  mkdir -p "$THEME_DIR"
+  cp /usr/share/themes/PiX $HOME/.themes/ -a
+fi
+
+# Copy gtk.css and settings.ini (required for GTK3 themes to work correctly)
+if [ ! -f "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ]; then
+  mkdir -p "$XDG_CONFIG_HOME/gtk-3.0"
+  cp /usr/share/raspi-ui-overrides/gtk.css "$XDG_CONFIG_HOME/gtk-3.0/"
+fi
+if [ ! -f "$XDG_CONFIG_HOME/gtk-3.0/settings.ini" ]; then
+  mkdir -p "$XDG_CONFIG_HOME/gtk-3.0"
+  cp /usr/share/raspi-ui-overrides/settings.ini "$XDG_CONFIG_HOME/gtk-3.0/"
+fi
+
+# Ensure Qt themes are consistent with GTK themes
+if [ ! -f "$XDG_CONFIG_HOME/Trolltech.conf" ]; then
+  cp /usr/share/raspi-ui-overrides/Trolltech.conf "$XDG_CONFIG_HOME/"
+fi
+
+# Ensure the existence of lxpanel config files
+LXPANEL_CONF_DIR="$XDG_CONFIG_HOME/lxpanel"
+if [ ! -f "$LXPANEL_CONF_DIR/launchtaskbar.cfg" ]; then
+  mkdir -p "$LXPANEL_CONF_DIR"
+  cp /etc/xdg/lxpanel/launchtaskbar.cfg "$LXPANEL_CONF_DIR"
+fi
+if [ ! -f "$LXPANEL_CONF_DIR/LXDE-pt/config" ]; then
+  mkdir -p "$LXPANEL_CONF_DIR/LXDE-pt"
+  cp /etc/xdg/lxpanel/profile/LXDE-pt/config "$LXPANEL_CONF_DIR/LXDE-pt"
+fi
+if [ ! -f "$LXPANEL_CONF_DIR/LXDE-pt/panels/panel" ]; then
+  mkdir -p "$LXPANEL_CONF_DIR/LXDE-pt/panels"
+  cp /etc/xdg/lxpanel/profile/LXDE-pt/panels/panel "$LXPANEL_CONF_DIR/LXDE-pt/panels"
+fi
+
+# Ensure the existence of the 'Desktop' folder
+if [ -e "$XDG_CONFIG_HOME/user-dirs.dirs" ]; then
+  . "$XDG_CONFIG_HOME/user-dirs.dirs"
+else
+  XDG_DESKTOP_DIR="$HOME/Desktop"
+fi
+mkdir -p "$XDG_DESKTOP_DIR"
+
+# Clean up after GDM (GDM sets the number of desktops to one)
+xprop -root -remove _NET_NUMBER_OF_DESKTOPS -remove _NET_DESKTOP_NAMES -remove _NET_CURRENT_DESKTOP 2> /dev/null
+
+# Enable GTK+2 integration for OpenOffice.org, if available.
+export SAL_USE_VCLPLUGIN=gtk
+
+# Launch DBus if needed
+if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
+  eval "$(dbus-launch --sh-syntax --exit-with-session)"
+fi
+
+export XDG_MENU_PREFIX="lxde-pt-"
+
+# Start the LXDE session
+exec /usr/bin/lxsession -s LXDE-pt -e LXDE
