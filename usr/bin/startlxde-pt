@@ -43,13 +43,13 @@ fi
 THEME_DIR="$HOME/.themes"
 if [ ! -d "$THEME_DIR/PiX" ]; then
   mkdir -p "$THEME_DIR"
-  cp /usr/share/themes/PiX $HOME/.themes/ -a
+  cp /usr/share/themes/PiX "$HOME/.themes/" -a
 fi
 
 # Copy gtk.css and settings.ini (required for GTK3 themes to work correctly)
 if [ ! -f "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ]; then
   mkdir -p "$XDG_CONFIG_HOME/gtk-3.0"
-  cp /usr/share/raspi-ui-overrides/gtk.css "$XDG_CONFIG_HOME/gtk-3.0/"
+  cp /usr/share/pt-ui-overrides/gtk.css "$XDG_CONFIG_HOME/gtk-3.0/"
 fi
 if [ ! -f "$XDG_CONFIG_HOME/gtk-3.0/settings.ini" ]; then
   mkdir -p "$XDG_CONFIG_HOME/gtk-3.0"
@@ -58,7 +58,7 @@ fi
 
 # Ensure Qt themes are consistent with GTK themes
 if [ ! -f "$XDG_CONFIG_HOME/Trolltech.conf" ]; then
-  cp /usr/share/raspi-ui-overrides/Trolltech.conf "$XDG_CONFIG_HOME/"
+  cp /usr/share/pt-ui-overrides/Trolltech.conf "$XDG_CONFIG_HOME/"
 fi
 
 # Ensure the existence of lxpanel config files
