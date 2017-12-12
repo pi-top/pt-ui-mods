@@ -10,5 +10,6 @@ Architecture: all
 Depends: ${misc:Depends}, raspberrypi-ui-mods
 Breaks: rpd-plym-splash
 Conflicts: rpd-plym-splash
+Recommends: pt-display (>> 2.0.0)
 Description: pi-topOS LXDE UI customisations
  Customised theme and configuration for LXDE desktop on Raspberry Pi.
