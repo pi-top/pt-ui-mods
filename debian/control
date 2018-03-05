@@ -7,9 +7,15 @@ Standards-Version: 3.9.6
 
 Package: pt-ui-mods
 Architecture: all
-Depends: ${misc:Depends}, raspberrypi-ui-mods
-Breaks: rpd-plym-splash
-Conflicts: rpd-plym-splash
-Recommends: pt-display (>> 2.0.0)
+Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, xserver-xorg,
+ x11-xserver-utils, policykit-1, lightdm, raspberrypi-sys-mods, 
+ zenity, libglib2.0-bin
+Recommends: xserver-xorg-video-fbturbo, libgksu2-0,
+ fonts-piboto, pimixer, pipanel, lxinput, raspberrypi-artwork, 
+ pi-greeter, rpd-wallpaper, pishutdown, scrot,
+ fontconfig-infinality, point-rpi, gtk2-engines-pixbuf, 
+ gtk2-engines-clearlookspix, gnome-icon-theme, rpd-icons,
+ lxplug-volume, lxplug-network, lxplug-bluetooth, lxplug-ejecter,
+ lxplug-ptbatt, pt-display (>> 2.0.0)
 Description: pi-topOS LXDE UI customisations
  Customised theme and configuration for LXDE desktop on Raspberry Pi.
