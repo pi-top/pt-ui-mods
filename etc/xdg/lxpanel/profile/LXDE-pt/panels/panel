@@ -51,11 +51,20 @@ Plugin {
     Size=32
   }
 }
+
+
+
+Add:
+    Scratch (2)
+    Turtle
+
+
+
 Plugin {
   type=launchbar
   Config {
     Button {
-      id=/usr/share/applications/chromium-browser.desktop
+      id=chromium-browser.desktop
     }
     Button {
       id=pcmanfm.desktop
@@ -64,13 +73,22 @@ Plugin {
       id=lxterminal.desktop
     }
     Button {
-      id=/usr/share/applications/ceed-universe.desktop
+      id=leafpad.desktop
     }
     Button {
-      id=/usr/share/applications/3d-slash.desktop
+      id=ceed-universe.desktop
     }
     Button {
-      id=wolfram-mathematica.desktop
+      id=scratch2.desktop
+    }
+    Button {
+      id=sonic-pi.desktop
+    }
+    Button {
+      id=3d-slash.desktop
+    }
+    Button {
+      id=turtleart.desktop
     }
   }
 }
