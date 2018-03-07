@@ -26,7 +26,7 @@ Global {
 Plugin {
   type=menu
   Config {
-    image=/usr/share/raspberrypi-artwork/menu.png
+    image=/usr/share/lxpanel/images/my-computer.png
     system {
     }
     separator {
