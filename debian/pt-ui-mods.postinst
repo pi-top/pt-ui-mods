@@ -5,7 +5,7 @@ set -e
 case "${1}" in
   configure)
     update-alternatives --install /usr/bin/x-session-manager \
-      x-session-manager /usr/bin/startlxde-pt 91 \
+      x-session-manager /usr/bin/startlxde-pt 90 \
       --slave /usr/share/man/man1/x-session-manager.1.gz \
       x-session-manager.1.gz /usr/share/man/man1/startlxde.1.gz
     getent passwd | while read line; do
@@ -94,7 +94,7 @@ case "${1}" in
               mkdir -p ${CONF_DIR}/autostart
               cat << EOF >> ${CONF_DIR}/autostart/pi-conf-backup.desktop
 [Desktop Entry]
-Exec=sh -c 'zenity --info --no-wrap --text="Your Raspbian system has been upgraded to the latest version.\n\nTo ensure compatibility with the new version, some configuration files have been overwritten -\nif you had customised your system, some of your changes may have been lost.\n\nYour original configuration files have been backed up and put in the directory ~/oldconffiles\n" && rm ~/.config/autostart/pi-conf-backup.desktop'
+Exec=sh -c 'zenity --info --no-wrap --text="Your pi-topOS system has been upgraded to the latest version.\n\nTo ensure compatibility with the new version, some configuration files have been overwritten -\nif you had customised your system, some of your changes may have been lost.\n\nYour original configuration files have been backed up and put in the directory ~/oldconffiles\n" && rm ~/.config/autostart/pi-conf-backup.desktop'
 Type=Application
 EOF
               chown ${OWNER} ${CONF_DIR}
