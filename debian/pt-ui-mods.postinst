@@ -26,33 +26,33 @@ case "${1}" in
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/Trolltech.conf"
           fi
-          if dpkg --compare-versions "${2}" lt "1.20171201"; then
+          if dpkg --compare-versions "${2}" lt "1.20180209"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${THEME_DIR}/PiX"
           fi
           if dpkg --compare-versions "${2}" lt "1.20170614"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxsession/LXDE-pt/desktop.conf"
+                           ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf"
           fi
           if dpkg --compare-versions "${2}" lt "1.20160718"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxsession/LXDE-pt/autostart"
+                           ${CONF_DIR}/lxsession/LXDE-pi/autostart"
           fi
           if dpkg --compare-versions "${2}" lt "1.20161206"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxsession/LXDE-pt/autokey.sh"
+                           ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh"
           fi
-          if dpkg --compare-versions "${2}" lt "1.20171006"; then
+          if dpkg --compare-versions "${2}" lt "1.20180125"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/openbox/lxde-pt-rc.xml"
+                           ${CONF_DIR}/openbox/lxde-pi-rc.xml"
           fi
           if dpkg --compare-versions "${2}" lt "1.20171115"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/pcmanfm/LXDE-pt/pcmanfm.conf"
+                           ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf"
           fi
           if dpkg --compare-versions "${2}" lt "1.20170707"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/pcmanfm/LXDE-pt/desktop-items-0.conf"
+                           ${CONF_DIR}/pcmanfm/LXDE-pi/desktop-items-0.conf"
           fi
           if dpkg --compare-versions "${2}" lt "1.20161018"; then
             CHANGED_FILES="${CHANGED_FILES} \
@@ -60,11 +60,11 @@ case "${1}" in
           fi
           if dpkg --compare-versions "${2}" lt "1.20161018"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxpanel/LXDE-pt/config"
+                           ${CONF_DIR}/lxpanel/LXDE-pi/config"
           fi
-          if dpkg --compare-versions "${2}" lt "1.20171006"; then
+          if dpkg --compare-versions "${2}" lt "1.20180125"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxpanel/LXDE-pt/panels/panel"
+                           ${CONF_DIR}/lxpanel/LXDE-pi/panels/panel"
           fi
           if dpkg --compare-versions "${2}" lt "1.20170614"; then
             CHANGED_FILES="${CHANGED_FILES} \
