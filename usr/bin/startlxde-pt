@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export XDG_DATA_DIRS="/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg"
+export XDG_DATA_DIRS="/usr/local/share:/usr/share/pt-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg"
 
 if [ -z "$XDG_CONFIG_HOME" ]; then
   export XDG_CONFIG_HOME="$HOME/.config"
@@ -53,7 +53,7 @@ if [ ! -f "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ]; then
 fi
 if [ ! -f "$XDG_CONFIG_HOME/gtk-3.0/settings.ini" ]; then
   mkdir -p "$XDG_CONFIG_HOME/gtk-3.0"
-  cp /usr/share/raspi-ui-overrides/settings.ini "$XDG_CONFIG_HOME/gtk-3.0/"
+  cp /usr/share/pt-ui-overrides/settings.ini "$XDG_CONFIG_HOME/gtk-3.0/"
 fi
 
 # Ensure Qt themes are consistent with GTK themes
