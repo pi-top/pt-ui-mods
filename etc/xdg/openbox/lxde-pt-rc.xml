@@ -347,12 +347,12 @@
     </keybind>
     <keybind key="0xC8">
       <action name="Execute">
-        <command>sh -c "if test -e /usr/bin/pt-os-dashboard; then /usr/bin/pt-os-dashboard --signal-only --hide &; fi; pcmanfm"</command>
+        <command>sh -c "pcmanfm; if test -e /usr/bin/pt-os-dashboard; then /usr/bin/pt-os-dashboard --signal-only --hide; fi"</command>
       </action>
     </keybind>
     <keybind key="0xC9">
       <action name="Execute">
-        <command>sh -c "if test -e /usr/bin/pt-os-dashboard; then /usr/bin/pt-os-dashboard --signal-only --hide &; fi; lxterminal"</command>
+        <command>sh -c "lxterminal; if test -e /usr/bin/pt-os-dashboard; then /usr/bin/pt-os-dashboard --signal-only --hide; fi"</command>
       </action>
     </keybind>
     <keybind key="0xCA">
