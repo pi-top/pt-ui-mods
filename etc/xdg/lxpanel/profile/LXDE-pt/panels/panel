@@ -10,7 +10,7 @@ Global {
   height=48
   transparent=1
   tintcolor=#ffffff
-  alpha=127
+  alpha=200
   autohide=0
   heightwhenhidden=2
   setdocktype=1
