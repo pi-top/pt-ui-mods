@@ -19,5 +19,5 @@ Recommends: xserver-xorg-video-fbturbo, libgksu2-0, pimixer, pipanel,
  gnome-icon-theme, rpd-icons, lxplug-volume, lxplug-network, 
  lxplug-bluetooth, lxplug-ejecter,lxplug-ptbatt, lxplug-ptdash, 
  opensnap
-Description: pi-topOS LXDE UI customisations
+Description: pi-top LXDE UI Customisations
  Customised theme and configuration for LXDE desktop on Raspberry Pi.
