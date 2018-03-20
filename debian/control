@@ -16,7 +16,7 @@ Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, xserver-xorg,
 Recommends: xserver-xorg-video-fbturbo, libgksu2-0, pimixer, pipanel, 
  lxinput, pi-greeter, pishutdown, scrot, fontconfig-infinality, 
  point-rpi, gtk2-engines-pixbuf, gtk2-engines-clearlookspix, 
- gnome-icon-theme, lxplug-volume, lxplug-network, 
+ gnome-icon-theme, pt-icons, lxplug-volume, lxplug-network, 
  lxplug-bluetooth, lxplug-ejecter,lxplug-ptbatt, lxplug-ptdash, 
  opensnap
 Description: pi-top LXDE UI Customisations
