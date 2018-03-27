@@ -61,25 +61,13 @@ Plugin {
       id=pcmanfm.desktop
     }
     Button {
-      id=lxterminal.desktop
-    }
-    Button {
-      id=leafpad.desktop
-    }
-    Button {
-      id=libreoffice-startcenter.desktop
-    }
-    Button {
       id=ceed-universe.desktop
     }
     Button {
       id=scratch2.desktop
-    }
+    }    
     Button {
-      id=sonic-pi.desktop
-    }
-    Button {
-      id=3d-slash.desktop
+      id=lxterminal.desktop
     }
   }
 }
