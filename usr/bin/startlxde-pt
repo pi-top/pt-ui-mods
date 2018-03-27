@@ -76,6 +76,13 @@ if [ ! -f "$LXPANEL_CONF_DIR/LXDE-pt/panels/panel" ]; then
   cp /etc/xdg/lxpanel/profile/LXDE-pt/panels/panel "$LXPANEL_CONF_DIR/LXDE-pt/panels"
 fi
 
+# Ensure the existence of lxterminal config file
+LXTERMINAL_CONF_DIR="$XDG_CONFIG_HOME/lxterminal"
+if [ ! -f "$LXTERMINAL_CONF_DIR/lxterminal.conf" ]; then
+  mkdir -p "$LXTERMINAL_CONF_DIR"
+  cp /usr/share/lxterminal/lxterminal.conf "$LXTERMINAL_CONF_DIR"
+fi
+
 # Ensure the existence of the 'Desktop' folder
 if [ -e "$XDG_CONFIG_HOME/user-dirs.dirs" ]; then
   . "$XDG_CONFIG_HOME/user-dirs.dirs"
