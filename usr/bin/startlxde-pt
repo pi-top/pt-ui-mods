@@ -97,5 +97,10 @@ fi
 
 export XDG_MENU_PREFIX="lxde-pt-"
 
+if [ -x /usr/lib/pt-display/pt-scale-desktop-ui ]; then
+  /usr/lib/pt-display/pt-scale-desktop-ui
+fi
+
+
 # Start the LXDE session
 exec /usr/bin/lxsession -s LXDE-pt -e LXDE
