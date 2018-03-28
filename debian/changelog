@@ -1,5 +1,5 @@
 pt-ui-mods (1.20171201) stretch; urgency=medium
 
-  * Initial release - matching raspberrypi-ui-mods functionality
+  * Initial release - forked raspberrypi-ui-mods
 
  -- Mike Roberts <mike@pi-top.com>  Fri, 09 Mar 2018 16:19:05 +0000
