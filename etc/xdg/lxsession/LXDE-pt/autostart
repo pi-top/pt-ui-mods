@@ -2,4 +2,3 @@
 @pcmanfm --desktop --profile LXDE-pt
 @xscreensaver -no-splash
 @point-rpi
-@sudo /usr/lib/pt-update/pt-update-checker
