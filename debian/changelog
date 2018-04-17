@@ -1,3 +1,11 @@
+pt-ui-mods (1.0.20180417-1) stretch; urgency=medium
+
+  * Added Bluetooth to lxpanel
+  * Fixed 'need 2 terminal button keypresses' bug
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 17 Apr 2018 12:10:17 +0100
+
+
 pt-ui-mods (1.0.20180328-1) stretch; urgency=medium
 
   * Initial release - forked raspberrypi-ui-mods
