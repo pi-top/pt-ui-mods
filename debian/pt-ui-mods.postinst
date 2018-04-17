@@ -32,27 +32,27 @@ case "${1}" in
           fi
           if dpkg --compare-versions "${2}" lt "1.0.20180328"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf"
+                           ${CONF_DIR}/lxsession/LXDE-pt/desktop.conf"
           fi
           if dpkg --compare-versions "${2}" lt "1.0.20180328"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxsession/LXDE-pi/autostart"
+                           ${CONF_DIR}/lxsession/LXDE-pt/autostart"
           fi
           if dpkg --compare-versions "${2}" lt "1.0.20180328"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh"
+                           ${CONF_DIR}/lxsession/LXDE-pt/autokey.sh"
           fi
           if dpkg --compare-versions "${2}" lt "1.0.20180328"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/openbox/lxde-pi-rc.xml"
+                           ${CONF_DIR}/openbox/lxde-pt-rc.xml"
           fi
           if dpkg --compare-versions "${2}" lt "1.0.20180328"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf"
+                           ${CONF_DIR}/pcmanfm/LXDE-pt/pcmanfm.conf"
           fi
           if dpkg --compare-versions "${2}" lt "1.0.20180328"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/pcmanfm/LXDE-pi/desktop-items-0.conf"
+                           ${CONF_DIR}/pcmanfm/LXDE-pt/desktop-items-0.conf"
           fi
           if dpkg --compare-versions "${2}" lt "1.0.20180328"; then
             CHANGED_FILES="${CHANGED_FILES} \
@@ -60,11 +60,11 @@ case "${1}" in
           fi
           if dpkg --compare-versions "${2}" lt "1.0.20180328"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxpanel/LXDE-pi/config"
+                           ${CONF_DIR}/lxpanel/LXDE-pt/config"
           fi
-          if dpkg --compare-versions "${2}" lt "1.0.20180328"; then
+          if dpkg --compare-versions "${2}" lt "1.0.20180417"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxpanel/LXDE-pi/panels/panel"
+                           ${CONF_DIR}/lxpanel/LXDE-pt/panels/panel"
           fi
           if dpkg --compare-versions "${2}" lt "1.0.20180328"; then
             CHANGED_FILES="${CHANGED_FILES} \
