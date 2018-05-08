@@ -6,7 +6,7 @@ pt-ui-mods (1.0.20180508-1) stretch; urgency=medium
   * rpi port: Use pi-topFONTLt instead of pi-topFONT Light for applications which ignore font weight
   * rpi port: Use rc_gui and /etc/default/keyboard instead of lxkeymap to manage key layouts
 
- -- Mike Roberts <mike@pi-top.com>  Tue, 17 Apr 2018 12:10:17 +0100
+ -- Mike Roberts <mike@pi-top.com>  Tue, 08 May 2018 11:14:32 +0100
 
 
 pt-ui-mods (1.0.20180328-1) stretch; urgency=medium
