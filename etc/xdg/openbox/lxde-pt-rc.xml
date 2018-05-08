@@ -52,7 +52,7 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>pi-topFONT Light</name>
+      <name>pi-topFONTLt</name>
       <size>12</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -61,7 +61,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>pi-topFONT Light</name>
+      <name>pi-topFONTLt</name>
       <size>12</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -70,7 +70,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>pi-topFONT Light</name>
+      <name>pi-topFONTLt</name>
       <size>12</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -79,7 +79,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>pi-topFONT Light</name>
+      <name>pi-topFONTLt</name>
       <size>12</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -88,13 +88,13 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>pi-topFONT Light</name>
+      <name>pi-topFONTLt</name>
       <size>12</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>pi-topFONT Light</name>
+      <name>pi-topFONTLt</name>
       <size>12</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
