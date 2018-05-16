@@ -1,1 +1,3 @@
-../pt-ui-mods/debian/pt-ui-mods.install
+pt-ui-mods/etc			/etc
+pt-ui-mods/usr          /usr
+pt-ui-mods/var    		/var
