@@ -1,0 +1,3 @@
+[submodule "pt-ui-mods"]
+	path = pt-ui-mods
+	url = git@github.com:pi-top/pt-ui-mods.git
