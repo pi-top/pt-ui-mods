@@ -5,7 +5,7 @@
 * Update master copies of config files (/etc/....)
 * Update postinstall script with version number and 'changed files'- if there is a new version installed by the package, this will back up the old version in ~/oldconfig annd delete the copies in the user directory.
 
-The startlxde-pi script which runs on desktop start, which is also included as part of the ui-mods package, checks to see if a config file in the user directory is missing, and if it is, it copies a clean version from the masters in /etc/
+The startlxde-pt script which runs on desktop start, which is also included as part of the ui-mods package, checks to see if a config file in the user directory is missing, and if it is, it copies a clean version from the masters in /etc/
 
 ## Mysterious files
 
