@@ -1,3 +1,9 @@
+pt-ui-mods (1.0.20190723-2) buster; urgency=medium
+
+  * Hide Thonny
+
+ -- Ben Pring <ben@pi-top.com>  Wed, 24 Jul 2019 11:45:43 +0100
+
 pt-ui-mods (1.0.20190723-1) buster; urgency=medium
 
   * Move to Buster
