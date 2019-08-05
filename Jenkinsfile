@@ -16,7 +16,8 @@ node ('master') {
     }
 
     stage ('Test') {
-        checkSymLinks()
+        // Disabled due to /etc/xdg/autostart/notification-daemon.desktop symlink from dependency
+        // checkSymLinks()
         shellcheck()
         try {
             lintian()
