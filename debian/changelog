@@ -1,6 +1,7 @@
 pt-ui-mods (1.0.20200601-1) buster; urgency=medium
 
   * rpi port: Add test for full KMS on 64-bit to path prepend for screen config
+  * rpi port: Add agnostics, rp-bookshelf and lxplug-magnifier as recommended packages
 
  -- Mike Roberts <mike@pi-top.com>  Mon, 01 Jun 2020 18:30:33 +0100
 
