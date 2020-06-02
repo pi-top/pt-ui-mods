@@ -1,1 +1,57 @@
-../private-pt-ui-mods/debian/control
+Source: pt-ui-mods
+Section: x11
+Priority: extra
+Maintainer: pi-top <deb-maintainers@pi-top.com>
+Build-Depends: debhelper (>= 8.1.0~)
+Standards-Version: 3.9.8
+
+Package: pt-ui-mods
+Architecture: armhf
+Replaces: raspberrypi-ui-mods
+Breaks: raspberrypi-ui-mods
+Conflicts: raspberrypi-ui-mods
+Depends: ${misc:Depends},
+ ${shlibs:Depends},
+# Explicitly included, as dh_shlibdeps is overridden
+ libc6-dev,
+ adapta-gtk-theme,
+ breeze-cursor-theme,
+ desktop-file-utils,
+ fonts-fs-me-pro,
+ libglib2.0-bin,
+ lightdm,
+ lxpanel,
+ lxsession,
+ openbox,
+ papirus-folders,
+ pt-notifications,
+ pt-icon-theme,
+ pcmanfm,
+ policykit-1,
+ python3-notify2,
+ raspberrypi-sys-mods,
+ x11-xserver-utils,
+ xserver-xorg,
+ zenity
+Recommends: compton,
+ gnome-icon-theme,
+ gtk2-engines-clearlookspix,
+ gtk2-engines-pixbuf,
+ gtk2-engines-pixflat,
+ lxplug-bluetooth,
+ lxplug-cputemp,
+ lxplug-ejecter,
+ lxplug-network,
+ lxplug-ptbatt,
+ lxplug-ptportal,
+ lxplug-volume,
+ onboard,
+ pi-greeter,
+ pimixer,
+ pt-portal,
+ pt-shutdown-helper,
+ rc-gui (>=1.18),
+ scrot,
+ xserver-xorg-video-fbturbo
+Description: pi-top LXDE UI Customisations
+ Customised theme and configuration for LXDE desktop on Raspberry Pi.

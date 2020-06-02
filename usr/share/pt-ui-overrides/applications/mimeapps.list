@@ -1,0 +1,16 @@
+[Default Applications]
+inode/directory=pcmanfm.desktop
+text/html=chromium-browser.desktop
+text/xml=chromium-browser.desktop
+application/xml=chromium-browser.desktop
+application/xhtml+xml=chromium-browser.desktop
+text/x-python=mu.codewith.editor.desktop
+text/plain=leafpad.desktop
+application/x-gtk-builder=glade-3.desktop
+application/deb=pi-gpk-install-local-file.desktop
+application/x-deb=pi-gpk-install-local-file.desktop
+image/png=gpicview.desktop
+image/jpeg=gpicview.desktop
+image/gif=gpicview.desktop
+image/tiff=gpicview.desktop
+image/x-ms-bmp=gpicview.desktop

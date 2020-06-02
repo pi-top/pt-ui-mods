@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Compton
+Comment=X11 compositor
+TryExec=compton
+Exec=compton -b --config /usr/share/themes/Adapta/openbox-3/compton.conf
+Categories=Utility
+StartupNotify=false
+Terminal=false
+Hidden=false

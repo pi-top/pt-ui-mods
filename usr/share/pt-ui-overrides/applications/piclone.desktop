@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Name=SD Card Copier
+Name[de]=SD Card Copier
+Name[en_GB]=SD Card Copier
+GenericName=SD Card Copier
+GenericName[de]=SD Card Copier
+GenericName[en_GB]=SD Card Copier
+Comment=Backup and restore SD card images
+Comment[de]=Erstellen Sie eine Kopie der SD-Karte
+Comment[en_GB]=Backup and restore SD card images
+Icon=media-removable
+Exec=env SUDO_ASKPASS=/usr/lib/piclone/pwdpic.sh sudo -A dbus-launch piclone
+NotShowIn=GNOME;XFCE;
+StartupNotify=true
+Categories=Utility;

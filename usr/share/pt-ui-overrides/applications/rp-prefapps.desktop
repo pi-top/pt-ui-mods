@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Recommended Software
+GenericName=Recommended Software
+Comment=Install additional programs recommended for use on the Pi
+Icon=recommended-software
+Exec=env SUDO_ASKPASS=/usr/lib/rp-prefapps/pwdrpp.sh sudo -A rp-prefapps
+NotShowIn=GNOME;XFCE;
+StartupNotify=true
+Categories=Settings;DesktopSettings;GTK;X-LXDE-Settings;

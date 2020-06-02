@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Scratch 3 - Block-Based Programming
+Comment=Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations
+TryExec=/usr/lib/scratch3/scratch-desktop
+Exec=/usr/lib/scratch3/scratch-desktop
+Icon=scratch-desktop
+Terminal=false
+Categories=Application;Development;
+MimeType=application/x-scratch3
+StartupNotify=true

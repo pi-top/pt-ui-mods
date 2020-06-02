@@ -1,1 +1,107 @@
-../private-pt-ui-mods/debian/pt-ui-mods.postinst
+#!/bin/bash -e
+
+_show_messagebox() {
+  local title="$1"
+  local body="$2"
+
+  DISPLAY=":0" /usr/bin/pt-notify-send \
+  --expire-time 10000 \
+  --icon "dialog-information" \
+  "${title}" \
+  "${body}"
+}
+
+_desktop_is_available() {
+  if pgrep -x Xorg > /dev/null; then
+    return 0
+  else
+    return 1
+  fi
+}
+
+notify_user_of_update() {
+  local body=()
+  title="The desktop has been updated."
+  # if [ "$CHANGED" = True ] ; then
+  #   body+=("Some obsolete configuration files have been removed and backed up in ~/oldconffiles.")
+  # fi
+  body+=("To apply desktop updates, wait until update has completed and then reboot.")
+
+  printf '%s\n' "${body[@]}"
+  if _desktop_is_available; then
+    _show_messagebox "${title}" "$(printf '%s\n\n' "${body[@]}")"
+  fi
+}
+
+is_first_install() {
+  if [ -z "${2}" ]; then
+    return 0
+  else
+    return 1
+  fi
+}
+
+case "${1}" in
+  configure)
+
+    min_version_w_autorandr_dependency="1.0.20200423"
+
+    # If upgrading from pre-'1.0.20200423', patch autorandr autostart file
+    # to match what pt-ui-mods used to provide
+    if is_first_install $@ || dpkg --compare-versions "$2" lt "${min_version_w_autorandr_dependency}"; then
+      sed -i "s|/usr/bin/autorandr -c --default default|/usr/bin/autorandr -c --default common|1" /etc/xdg/autostart/autorandr.desktop
+    fi
+
+    update-desktop-database /usr/share/pt-ui-overrides/applications/
+    update-alternatives --install /usr/bin/x-session-manager \
+      x-session-manager /usr/bin/startlxde-pt 90 \
+      --slave /usr/share/man/man1/x-session-manager.1.gz \
+      x-session-manager.1.gz /usr/share/man/man1/startlxde.1.gz
+    # CHANGED=False
+    pwdlines=$(getent passwd)
+    while read line
+    do
+      USHELL=$(echo "$line" | cut -d: -f7)
+      if grep -q "$USHELL" /etc/shells ; then
+        USER=$(echo "$line" | cut -d: -f1)
+        LOGNAME=$USER
+        SUDO_USER=$USER
+        GROUP=$(getent group "$(getent passwd "$USER" | cut -d: -f4)" | cut -d: -f1)
+        OWNER=${USER}:${GROUP}
+        HOME_DIR=$(echo "$line" | cut -d: -f6)
+        CONF_DIR=${HOME_DIR}/.config
+        THEME_DIR=${HOME_DIR}/.themes
+
+        echo "Updating profile for ${USER}..."
+
+        if is_first_install $@; then
+          papirus-folders -C bluegrey --theme Papirus-Dark
+
+          if [ ! -d /root/.config/lxterminal ]; then
+            mkdir -p /root/.config/lxterminal
+          fi
+          cp /usr/share/pt-ui-overrides/lxterminal.conf /root/.config/lxterminal/
+
+        # elif dpkg --compare-versions "${2}" lt "0"; then
+        #   CHANGED=True
+        fi
+      fi
+    done <<EOF
+    $pwdlines
+EOF
+    if ! is_first_install $@; then
+      notify_user_of_update
+    fi
+    ;;
+
+  abort-upgrade|abort-remove|abort-deconfigure)
+
+    ;;
+
+  *)
+    echo "postinst called with unknown argument \`${1}'" >&2
+    exit 1
+    ;;
+esac
+
+#DEBHELPER#

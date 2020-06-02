@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=pi-top Further
+Comment=Social learning platform for makers
+TryExec=/usr/bin/x-www-browser
+Exec=x-www-browser https://further.pi-top.com/
+Icon=pt-further
+Terminal=false
+Categories=Education;

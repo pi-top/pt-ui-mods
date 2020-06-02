@@ -1,0 +1,15 @@
+#!/bin/bash
+
+SCREENSHOT_DIR="$HOME/Desktop/Screen Captures"
+
+mkdir -p "$SCREENSHOT_DIR"
+
+DATE="$(date "+%y-%m-%d")"
+TIME="$(date "+%H.%M.%S")"
+SCREENSHOT_FILENAME="Screen Capture $DATE at $TIME.png"
+
+if grep -q okay /proc/device-tree/soc/v3d@7ec00000/status 2>/dev/null || grep -q okay /proc/device-tree/soc/firmwarekms@7e600000/status 2>/dev/null; then
+	scrot "$SCREENSHOT_DIR/$SCREENSHOT_FILENAME"
+else
+	raspi2png -p "$SCREENSHOT_DIR/$SCREENSHOT_FILENAME"
+fi

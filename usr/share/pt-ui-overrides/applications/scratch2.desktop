@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Scratch 2 - Block-Based Programming (Legacy)
+Comment=Scratch is a free programming language and online community where you can create your own interactive stories, games and animations. Legacy version.
+TryExec=/usr/lib/electron/electron
+Exec=/usr/bin/scratch2
+Icon=scratch2
+Terminal=false
+Categories=Application;Development;
+MimeType=application/x-scratch2

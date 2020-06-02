@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Raspberry Pi Help
+Comment=Link to RPi help pages
+TryExec=/usr/bin/x-www-browser
+Exec=x-www-browser https://rpf.io/raspbian-help
+Icon=rpi
+Terminal=false
+Categories=Help;

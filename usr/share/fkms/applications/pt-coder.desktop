@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Exec=/usr/bin/pt-coder
+Icon=pt-coder
+Terminal=false
+Name=pi-topCODER
+Comment=(Deprecated) Learn to code and track your progress as you create physical computing projects.
+Categories=Application;Development;
+NoDisplay=true

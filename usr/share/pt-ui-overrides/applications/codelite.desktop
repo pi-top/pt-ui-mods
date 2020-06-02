@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=CodeLite - C/C++/PHP/Node.js IDE
+Comment=CodeLite is an Integrated Development Environment specialized in C, C++, PHP and JavaScript (mainly for backend developers using Node.js) programming languages
+Exec=codelite %f
+Icon=codelite
+Terminal=false
+Type=Application
+Categories=Development;
+StartupNotify=true
+Keywords=IDE;development;programming;

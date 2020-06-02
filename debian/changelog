@@ -1,1 +1,324 @@
-../private-pt-ui-mods/debian/changelog
+pt-ui-mods (1.0.20200601-1) buster; urgency=medium
+
+  * rpi port: Add test for full KMS on 64-bit to path prepend for screen config
+
+ -- Mike Roberts <mike@pi-top.com>  Mon, 01 Jun 2020 18:30:33 +0100
+
+pt-ui-mods (1.0.20200423-2) buster; urgency=medium
+
+  * Add missing libc dependency
+  * Remove .DS_Store from /usr/share
+
+ -- Mike Roberts <mike@pi-top.com>  Wed, 29 Apr 2020 16:10:25 +0100
+
+pt-ui-mods (1.0.20200423-1) buster; urgency=medium
+
+  * Patch autorandr dependency's autostart file to match what was provided by pt-ui-mods (pre-'1.0.20200402')
+
+ -- Mike Roberts <mike@pi-top.com>  Thu, 23 Apr 2020 09:51:41 +0100
+
+pt-ui-mods (1.0.20200402-1) buster; urgency=medium
+
+  * No longer provide autorandr
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 10 Mar 2020 10:42:43 +0000
+
+pt-ui-mods (1.0.20200311-1) buster; urgency=medium
+
+  * Fix and format XML for Openbox
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 10 Mar 2020 10:42:43 +0000
+
+pt-ui-mods (1.0.20200128-1) buster; urgency=medium
+
+  * rpi port: Move task manager to Ctr-Shift-Esc and shutdown to Ctrl-Alt-Del
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 28 Jan 2020 12:51:55 +0000
+
+pt-ui-mods (1.0.20200117-1) buster; urgency=medium
+
+  * rpi port: Make key shortcut for shutdown Ctrl-Alt-Backspace
+
+ -- Ben Pring <ben@pi-top.com>  Tue, 22 Oct 2019 13:29:18 +0100
+
+pt-ui-mods (1.0.20191022-1) buster; urgency=medium
+
+  * Remove Wolfram desktop files
+
+ -- Ben Pring <ben@pi-top.com>  Tue, 22 Oct 2019 13:29:18 +0100
+
+pt-ui-mods (1.0.20191018-2) buster; urgency=medium
+
+  * Rename pt-autorandr back to autorandr and declare package provides it
+
+ -- Mike Roberts <mike@pi-top.com>  Fri, 18 Oct 2019 14:38:46 +0800
+
+pt-ui-mods (1.0.20191018-1) buster; urgency=medium
+
+  * Move unreleased version of autorandr from pt-os-mods
+
+ -- Choudhry Amjad <choudhry@pi-top.com>  Fri, 18 Oct 2019 12:13:23 +0800
+
+pt-ui-mods (1.0.20191017-1) buster; urgency=medium
+
+  * Override autorandr.desktop with common mode
+
+ -- Choudhry Amjad <choudhry@pi-top.com>  Thu, 17 Oct 2019 14:18:38 +0100
+
+pt-ui-mods (1.0.20191015-1) buster; urgency=medium
+
+  * Re-add VNC RandR resolution
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 15 Oct 2019 21:17:07 +0800
+
+pt-ui-mods (1.0.20191014-1) buster; urgency=medium
+
+  * Correct information pi-top Help desktop file
+
+ -- Choudhry Amjad <choudhry@pi-top.com>  Mon, 14 Oct 2019 17:02:55 +0100
+
+pt-ui-mods (1.0.20191010-1) buster; urgency=medium
+
+  * Remove VNC RandR resolution
+
+ -- Choudhry Amjad <choudhry@pi-top.com>  Thu, 10 Oct 2019 12:10:22 +0100
+
+pt-ui-mods (1.0.20191008-1) buster; urgency=medium
+
+  * Remove X flag from postinst and prerm files
+
+ -- Choudhry Amjad <choudhry@pi-top.com>  Tue, 08 Oct 2019 14:59:12 +0100
+
+pt-ui-mods (1.0.20191002-2) buster; urgency=medium
+
+  * Add some more logging
+
+ -- Ben Pring <ben@pi-top.com>  Fri, 04 Oct 2019 15:04:30 +0100
+
+pt-ui-mods (1.0.20191002-1) buster; urgency=medium
+
+  * Update pt support links
+
+ -- Choudhry Amjad <choudhry@pi-top.com>  Wed, 02 Oct 2019 14:23:59 +0100
+
+pt-ui-mods (1.0.20190930-1) buster; urgency=medium
+
+  * Hide Coder from the menu when running on FKMS (2)
+
+ -- Ben Pring <ben@pi-top.com>  Mon, 30 Sep 2019 09:06:20 +0100
+
+pt-ui-mods (1.0.20190925-2) buster; urgency=medium
+
+  * Add keyboard and mouse configuration to the menu.
+
+ -- Ben Pring <ben@pi-top.com>  Wed, 25 Sep 2019 17:59:04 +0100
+
+pt-ui-mods (1.0.20190925-1) buster; urgency=medium
+
+  * Tell VNC Server to support 1080p resolution
+
+ -- Ben Pring <ben@pi-top.com>  Wed, 25 Sep 2019 17:27:36 +0100
+
+pt-ui-mods (1.0.20190924-1) buster; urgency=medium
+
+  * Hide Coder from the menu when running on FKMS
+
+ -- Ben Pring <ben@pi-top.com>  Tue, 24 Sep 2019 14:10:13 +0100
+
+pt-ui-mods (1.0.20190904-2) buster; urgency=medium
+
+  * Hide caffeine and caffeine-indicator from start menu
+
+ -- Choudhry Amjad <choudhry@pi-top.com>  Wed, 04 Sep 2019 13:44:56 +0100
+
+pt-ui-mods (1.0.20190904-1) buster; urgency=medium
+
+  * Fix screenshot functionality to work with KMS and legacy display drivers
+
+ -- Choudhry Amjad <choudhry@pi-top.com>  Wed, 04 Sep 2019 11:20:59 +0100
+
+pt-ui-mods (1.0.20190903-1) buster; urgency=medium
+
+  * Fix volume keyboard shortcut commands
+
+ -- Choudhry Amjad <choudhry@pi-top.com>  Tue, 03 Sep 2019 13:23:19 +0100
+
+pt-ui-mods (1.0.20190828-1) buster; urgency=medium
+
+  * Open images with Image Viewer by default
+
+ -- Ben Pring <ben@pi-top.com>  Wed, 28 Aug 2019 15:05:14 +0100
+
+pt-ui-mods (1.0.20190823-1) buster; urgency=medium
+
+  * Restore Scratch 2 for legacy users
+
+ -- Ben Pring <ben@pi-top.com>  Fri, 23 Aug 2019 12:19:00 +0100
+
+pt-ui-mods (1.0.20190814-1) buster; urgency=medium
+
+  * Scratch 2 -> Scratch 3
+
+ -- Mike Roberts <mike@pi-top.com>  Wed, 14 Aug 2019 15:46:52 +0100
+
+pt-ui-mods (1.0.20190811-1) buster; urgency=medium
+
+  * Use htop icon from package
+  * Improve SD Card Copier comment
+
+ -- Mike Roberts <mike@pi-top.com>  Sun, 11 Aug 2019 12:35:43 +0100
+
+pt-ui-mods (1.0.20190805-2) buster; urgency=medium
+
+  * Improve entries for Onboard, VNC Viewer, mtPaint
+  * Fix permissions for mpv.desktop
+
+ -- Mike Roberts <mike@pi-top.com>  Mon, 05 Aug 2019 15:51:13 +0100
+
+pt-ui-mods (1.0.20190805-1) buster; urgency=medium
+
+  * More descriptive start menu entries
+
+ -- Mike Roberts <mike@pi-top.com>  Mon, 05 Aug 2019 13:46:04 +0100
+
+pt-ui-mods (1.0.20190731-1) buster; urgency=medium
+
+  * Revise start menu entries to be more descriptive
+
+ -- Ben Pring <ben@pi-top.com>  Wed, 31 Jul 2019 12:18:34 +0100
+
+pt-ui-mods (1.0.20190730-1) buster; urgency=medium
+
+  * Revise start menu entries to be more descriptive
+  * Move pi-top docs to subfolder
+  * Remove opensnap in favour of keyboard shortcuts; reduce background RAM
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 30 Jul 2019 20:17:35 +0100
+
+pt-ui-mods (1.0.20190726-2) buster; urgency=medium
+
+  * Re-add lxpolkit as polkit command in lxsession desktop.conf
+
+ -- Mike Roberts <mike@pi-top.com>  Fri, 26 Jul 2019 14:48:03 +0100
+
+pt-ui-mods (1.0.20190726-1) buster; urgency=medium
+
+  * rpi port: Set lxpanel default monitor to 0
+  * Launch task manager with 'Ctrl + Shift + Esc'
+  * Launch shutdown helper with 'Ctrl + Alt + Del'
+  * 'ImageMagick (color depth=q16)' -> 'ImageMagick'
+
+ -- Mike Roberts <mike@pi-top.com>  Fri, 26 Jul 2019 11:30:01 +0100
+
+pt-ui-mods (1.0.20190723-2) buster; urgency=medium
+
+  * Hide Thonny
+
+ -- Ben Pring <ben@pi-top.com>  Wed, 24 Jul 2019 15:10:39 +0100
+
+pt-ui-mods (1.0.20190723-1) buster; urgency=medium
+
+  * Move to Buster
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 23 Jul 2019 11:45:43 +0100
+
+pt-ui-mods (1.0.20190627-1) buster; urgency=medium
+
+  * rpi port: Change environment variable to select GTK+3 backend for LibreOffice
+
+ -- Mike Roberts <mike@pi-top.com>  Thu, 27 Jun 2019 14:14:15 +0100
+
+pt-ui-mods (1.0.20190625-2) buster; urgency=medium
+
+  * Move notification tools to other packages
+
+ -- Ben Pring <ben@pi-top.com>  Tue, 25 Jun 2019 15:51:06 +0100
+
+pt-ui-mods (1.0.20190625-1) buster; urgency=medium
+
+  * rpi port: Buster prototype
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 25 Jun 2019 14:14:15 +0100
+
+pt-ui-mods (1.0.20190530-1) stretch; urgency=medium
+
+  * wallpaper_mode=crop for non-standard resolutions
+
+ -- Mike Roberts <mike@pi-top.com>  Thu, 30 May 2019 11:46:17 +0100
+
+pt-ui-mods (1.0.20190517-1) stretch; urgency=high
+
+  * Use volumealsabt in lxpanel, rather than volumealsa
+
+ -- Ben Pring <ben@pi-top.com>  Fri, 17 May 2019 15:00:11 +0100
+
+pt-ui-mods (1.0.20190422-1) stretch; urgency=high
+
+  * Update all preferences for pi-topOS Sirius
+
+ -- Mike Roberts <mike@pi-top.com>  Mon, 22 Apr 2019 13:13:04 +0800
+
+pt-ui-mods (1.0.20180813-2) stretch; urgency=medium
+
+  * rpi port: Retain existing autostart file unless it is the same as global
+  * rpi port: Fix for postinst bug
+  * rpi port: Major modifications to config files to avoid copying local versions where possible
+  * rpi port: Only use global themes
+  * rpi port: New scrollbar buttons
+  * rpi port: Remove Wolfram icons from taskbar
+  * rpi port: Add initial sync to startlxde script
+  * rpi port: Remove pistore desktop file
+
+ -- Mike Roberts <mike@pi-top.com>  Mon, 26 Nov 2018 14:12:14 +0800
+
+pt-ui-mods (1.0.20180813-1) stretch; urgency=medium
+
+  * Migrated "Print Screen" functionality to raspi2png to support more applications
+  * Added "Print Screen" support to P1 key
+
+ -- Mike Roberts <mike@pi-top.com>  Fri, 29 Jun 2018 14:25:12 +0100
+
+pt-ui-mods (1.0.20180629-1) stretch; urgency=medium
+
+  * rpi port: Updates to some desktop files to rejig menu slightly
+
+ -- Mike Roberts <mike@pi-top.com>  Fri, 29 Jun 2018 14:25:12 +0100
+
+pt-ui-mods (1.0.20180625-1) stretch; urgency=medium
+
+  * Fixed README sometimes trying to be written to non-existent folder
+  * Post installation script now passes ShellCheck tests
+
+ -- Mike Roberts <mike@pi-top.com>  Mon, 25 Jun 2018 15:48:31 +0100
+
+pt-ui-mods (1.0.20180619-1) stretch; urgency=medium
+
+  * Added README to backed up config files
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 19 Jun 2018 12:27:09 +0100
+
+pt-ui-mods (1.0.20180522-1) stretch; urgency=medium
+
+  * rpi port: Use lxplug-volume control messages for volume control keys
+  * rpi port: Remove desktop add/remove options from openbox menu
+  * rpi port: Add taskbar default colours to theme file
+  * rpi port: Set default toolbar icon size correctly
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 22 May 2018 19:32:02 +0100
+
+pt-ui-mods (1.0.20180508-1) stretch; urgency=medium
+
+  * Added Bluetooth to lxpanel
+  * Fixed 'need 2 terminal button keypresses' bug
+  * rpi port: Install qtc5t configuration file to theme Qt applications
+  * rpi port: Use pi-topFONTLt instead of pi-topFONT Light for applications which ignore font weight
+  * rpi port: Use rc_gui and /etc/default/keyboard instead of lxkeymap to manage key layouts
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 08 May 2018 11:14:32 +0100
+
+
+pt-ui-mods (1.0.20180328-1) stretch; urgency=medium
+
+  * Initial release - forked raspberrypi-ui-mods
+
+ -- Mike Roberts <mike@pi-top.com>  Fri, 09 Mar 2018 16:19:05 +0000
