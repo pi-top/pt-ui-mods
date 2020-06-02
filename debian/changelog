@@ -1,7 +1,9 @@
 pt-ui-mods (1.0.20200601-1) buster; urgency=medium
 
+  * rpi port: Add agnostics as recommended package
+  * rpi port: Add rp-bookshelf as recommended package
+  * rpi port: Add lxplug-magnifier as recommended package
   * rpi port: Add test for full KMS on 64-bit to path prepend for screen config
-  * rpi port: Add agnostics, rp-bookshelf and lxplug-magnifier as recommended packages
 
  -- Mike Roberts <mike@pi-top.com>  Mon, 01 Jun 2020 18:30:33 +0100
 
@@ -14,7 +16,7 @@ pt-ui-mods (1.0.20200423-2) buster; urgency=medium
 
 pt-ui-mods (1.0.20200423-1) buster; urgency=medium
 
-  * Patch autorandr dependency's autostart file to match what was provided by pt-ui-mods (pre-'1.0.20200402')
+  * Patch autorandr dependency autostart: match pt-ui-mods (pre-'1.0.20200402')
 
  -- Mike Roberts <mike@pi-top.com>  Thu, 23 Apr 2020 09:51:41 +0100
 
