@@ -1,3 +1,9 @@
+pt-ui-mods (1.0.20200603-1) buster; urgency=medium
+
+  * Remove unnecessary DISPLAY variable from postinst
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 23 Jun 2020 15:40:50 +0100
+
 pt-ui-mods (1.0.20200602-1) buster; urgency=medium
 
   * Update raspi2png to latest build from source repo
