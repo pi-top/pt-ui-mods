@@ -1,3 +1,9 @@
+pt-ui-mods (1.0.20200604-1) buster; urgency=medium
+
+  * Update Further icon
+
+ -- Mike Roberts <mike@pi-top.com>  Mon, 29 Jun 2020 12:13:35 +0100
+
 pt-ui-mods (1.0.20200603-1) buster; urgency=medium
 
   * Remove unnecessary DISPLAY variable from postinst
