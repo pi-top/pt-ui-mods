@@ -1,6 +1,13 @@
+pt-ui-mods (1.0.20200702-1) buster; urgency=medium
+
+  * Use Chromium to open PDF files
+  * Use Mousepad to open text files
+
+ -- Mike Roberts <mike@pi-top.com>  Wed, 01 Jul 2020 13:53:28 +0100
+
 pt-ui-mods (1.0.20200701-1) buster; urgency=medium
 
-  Add pt-further to launch Further with additional device information
+  * Add pt-further to launch Further with additional device information
 
  -- Mike Roberts <mike@pi-top.com>  Wed, 01 Jul 2020 13:53:28 +0100
 
