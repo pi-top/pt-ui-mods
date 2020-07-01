@@ -339,7 +339,7 @@
     </keybind>
     <keybind key="0xCA">
       <action name="Execute">
-        <command>sh -c "if test -e /usr/bin/x-www-browser; then /usr/bin/x-www-browser https://further.pi-top.com; fi"</command>
+        <command>pt-further</command>
       </action>
     </keybind>
     <!-- Launch task manager with Ctrl+Shift+Esc -->
