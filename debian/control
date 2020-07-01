@@ -2,7 +2,9 @@ Source: pt-ui-mods
 Section: x11
 Priority: extra
 Maintainer: pi-top <deb-maintainers@pi-top.com>
-Build-Depends: debhelper (>= 8.1.0~)
+Build-Depends: debhelper (>= 8.1.0~),
+ dh-python,
+ python3:any
 Standards-Version: 3.9.8
 
 Package: pt-ui-mods
@@ -11,6 +13,7 @@ Replaces: raspberrypi-ui-mods
 Breaks: raspberrypi-ui-mods
 Conflicts: raspberrypi-ui-mods
 Depends: ${misc:Depends},
+ ${python3:Depends},
  ${shlibs:Depends},
 # Explicitly included, as dh_shlibdeps is overridden
  libc6-dev,
