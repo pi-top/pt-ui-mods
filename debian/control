@@ -11,6 +11,7 @@ Replaces: raspberrypi-ui-mods
 Breaks: raspberrypi-ui-mods
 Conflicts: raspberrypi-ui-mods
 Depends: ${misc:Depends},
+ ${python3:Depends},
  ${shlibs:Depends},
 # Explicitly included, as dh_shlibdeps is overridden
  libc6-dev,
