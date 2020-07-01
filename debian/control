@@ -2,7 +2,9 @@ Source: pt-ui-mods
 Section: x11
 Priority: extra
 Maintainer: pi-top <deb-maintainers@pi-top.com>
-Build-Depends: debhelper (>= 8.1.0~)
+Build-Depends: debhelper (>= 8.1.0~),
+ dh-python,
+ python3:any
 Standards-Version: 3.9.8
 
 Package: pt-ui-mods
