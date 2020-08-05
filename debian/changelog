@@ -1,4 +1,4 @@
-pt-ui-mods (1.0.20200701-2) buster; urgency=medium
+pt-ui-mods (1.0.20200805-1) buster; urgency=medium
 
   * Add pt-further to launch Further with additional device information
   * Use Chromium to open PDF files
