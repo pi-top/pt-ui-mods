@@ -1,3 +1,9 @@
+pt-ui-mods (1.0.20201007-1) buster; urgency=medium
+
+  * Add pt-touchegg to launch Touchégg
+
+ -- Mike Roberts <mike@pi-top.com>  Wed, 07 Oct 2020 17:16:55 +0100
+
 pt-ui-mods (1.0.20200805-1) buster; urgency=medium
 
   * Add pt-further to launch Further with additional device information
