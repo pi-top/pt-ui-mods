@@ -1,6 +1,6 @@
 Source: pt-ui-mods
 Section: x11
-Priority: extra
+Priority: optional
 Maintainer: pi-top <deb-maintainers@pi-top.com>
 Build-Depends: debhelper-compat (= 12),
  dh-sequence-python3,
