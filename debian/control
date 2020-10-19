@@ -2,10 +2,9 @@ Source: pt-ui-mods
 Section: x11
 Priority: extra
 Maintainer: pi-top <deb-maintainers@pi-top.com>
-Build-Depends: debhelper (>= 8.1.0~),
- dh-python,
- python3:any
-Standards-Version: 3.9.8
+Build-Depends: debhelper-compat (= 12),
+ dh-sequence-python3,
+Standards-Version: 4.5.0
 
 Package: pt-ui-mods
 Architecture: armhf

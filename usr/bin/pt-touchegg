@@ -12,5 +12,5 @@ if [ "$EUID" -eq 0 ]; then
 	exit
 fi
 
+systemctl --user start touchegg
 pt-notify-send -i libinput-gestures -t 10000 "Touchégg - Gestures Manager" "Multi-touch gestures are now enabled - happy swiping!"
-touchegg

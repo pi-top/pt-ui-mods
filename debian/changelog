@@ -1,3 +1,12 @@
+pt-ui-mods (1.0.20201019) buster; urgency=medium
+
+  * Add VS Code desktop file
+  * Use touchegg's user systemd service
+  * Upgrade to compat level 12
+  * Migrate to native package
+
+ -- Mike Roberts <mike@pi-top.com>  Mon, 19 Oct 2020 13:46:50 +0100
+
 pt-ui-mods (1.0.20201007-1) buster; urgency=medium
 
   * Add pt-touchegg to launch Touchégg
