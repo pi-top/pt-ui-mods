@@ -1,3 +1,9 @@
+pt-ui-mods (1.0.20201103) buster; urgency=medium
+
+  * ptcommon -> pitop.core
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 03 Nov 2020 14:41:55 +0000
+
 pt-ui-mods (1.0.20201019) buster; urgency=medium
 
   * Add VS Code desktop file

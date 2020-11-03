@@ -2,20 +2,27 @@ Source: pt-ui-mods
 Section: x11
 Priority: optional
 Maintainer: pi-top <deb-maintainers@pi-top.com>
-Build-Depends: debhelper-compat (= 12),
+Build-Depends:
+ debhelper-compat (= 12),
  dh-sequence-python3,
 Standards-Version: 4.5.0
 
 Package: pt-ui-mods
-Architecture: armhf
-Replaces: raspberrypi-ui-mods
-Breaks: raspberrypi-ui-mods
-Conflicts: raspberrypi-ui-mods
-Depends: ${misc:Depends},
+Architecture: any
+Replaces:
+ raspberrypi-ui-mods,
+Breaks:
+ raspberrypi-ui-mods,
+Conflicts:
+ raspberrypi-ui-mods,
+Depends:
+ ${misc:Depends},
  ${python3:Depends},
  ${shlibs:Depends},
 # Explicitly included, as dh_shlibdeps is overridden
  libc6-dev,
+# Used by pt-further
+ python3-pitop,
  adapta-gtk-theme,
  breeze-cursor-theme,
  desktop-file-utils,
