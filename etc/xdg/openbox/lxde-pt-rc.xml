@@ -290,20 +290,26 @@
         <command>lxde-pt-shutdown-helper</command>
       </action>
     </keybind>
+    <!-- Launch screen reader installer with Ctrl+Alt+Space -->
+    <keybind key="C-A-space">
+      <action name="Execute">
+         <command>env SUDO_ASKPASS=/usr/lib/gui-pkinst/pwdgpi.sh sudo -AE gui-pkinst orca reboot</command>
+      </action>
+    </keybind>
     <!-- Keybindings for audio volume media keys -->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>sh -c "lxpanelctl command volumealsabt volu"</command>
+        <command>sh -c "lxpanelctl command volumepulse volu"</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>sh -c "lxpanelctl command volumealsabt vold"</command>
+        <command>sh -c "lxpanelctl command volumepulse vold"</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>sh -c "lxpanelctl command volumealsabt mute"</command>
+        <command>sh -c "lxpanelctl command volumepulse mute"</command>
       </action>
     </keybind>
     <!-- pi-top keyboard keybindings -->
@@ -433,16 +439,6 @@
         <action name="Lower"/>
         <action name="FocusToBottom"/>
         <action name="Unfocus"/>
-      </mousebind>
-      <mousebind button="Up" action="Click">
-        <action name="Shade"/>
-        <action name="FocusToBottom"/>
-        <action name="Unfocus"/>
-        <action name="Lower"/>
-      </mousebind>
-      <mousebind button="Down" action="Click">
-        <action name="Unshade"/>
-        <action name="Raise"/>
       </mousebind>
       <mousebind button="Right" action="Press">
         <action name="Focus"/>

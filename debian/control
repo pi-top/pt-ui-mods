@@ -42,12 +42,16 @@ Depends:
  x11-xserver-utils,
  xserver-xorg,
  zenity
-Recommends: agnostics,
+Recommends:
+ agnostics,
  compton,
+ cups,
  gnome-icon-theme,
  gtk2-engines-clearlookspix,
  gtk2-engines-pixbuf,
  gtk2-engines-pixflat,
+ gui-pkinst,
+ hplip,
  lxplug-bluetooth,
  lxplug-cputemp,
  lxplug-ejecter,
@@ -64,6 +68,7 @@ Recommends: agnostics,
  rc-gui (>=1.18),
  rp-bookshelf,
  scrot,
- xserver-xorg-video-fbturbo
+ system-config-printer,
+ xserver-xorg-video-fbturbo,
 Description: pi-top LXDE UI Customisations
  Customised theme and configuration for LXDE desktop on Raspberry Pi.

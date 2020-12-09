@@ -1,3 +1,11 @@
+pt-ui-mods (1.0.20201109) buster; urgency=medium
+
+  * rpi port: Add printer support
+  * rpi port: Add automatic screen reader installation shortcut
+  * rpi port: Use pulse audio volume panel icon
+
+ -- Mike Roberts <mike@pi-top.com>  Wed, 09 Dec 2020 02:32:42 +0000
+
 pt-ui-mods (1.0.20201103) buster; urgency=medium
 
   * ptcommon -> pitop.core
