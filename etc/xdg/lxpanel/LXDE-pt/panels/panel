@@ -119,17 +119,6 @@ Plugin {
   }
 }
 Plugin {
-  type=ptportal
-  Config {
-  }
-}
-Plugin {
-  type=space
-  Config {
-    Size=2
-  }
-}
-Plugin {
   type=bluetooth
   Config {
   }
