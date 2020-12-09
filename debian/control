@@ -23,6 +23,8 @@ Depends:
  libc6-dev,
 # Used by pt-further
  python3-pitop,
+# Required for pt-sdk_docs.desktop
+ python3-pitop-doc,
  adapta-gtk-theme,
  breeze-cursor-theme,
  desktop-file-utils,
