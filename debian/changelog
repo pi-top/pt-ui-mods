@@ -1,3 +1,9 @@
+pt-ui-mods (1.0.20201110) buster; urgency=medium
+
+  * pitop.core -> pitopcommon
+
+ -- Jorge Capona <jorge@pi-top.com>  Thu, 10 Dec 2020 11:36:58 -0300
+
 pt-ui-mods (1.0.20201109) buster; urgency=medium
 
   * rpi port: Add printer support
