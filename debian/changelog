@@ -1,8 +1,10 @@
 pt-ui-mods (1.0.20201110) buster; urgency=medium
 
   * pitop.core -> pitopcommon
+  * rpi port: Add PDF association with Debian version of Chromium
+  * rpi port: Install printer support meta-package
 
- -- Jorge Capona <jorge@pi-top.com>  Thu, 10 Dec 2020 11:36:58 -0300
+ -- Mike Roberts <mike@pi-top.com>  Thu, 10 Dec 2020 16:01:17 +0000
 
 pt-ui-mods (1.0.20201109) buster; urgency=medium
 
