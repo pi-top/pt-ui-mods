@@ -83,11 +83,10 @@ case "${1}" in
           cp /usr/share/pt-ui-overrides/lxterminal.conf /root/.config/lxterminal/
 
         elif dpkg --compare-versions "${2}" lt "1.0.20201111"; then
-            if [ -z "$(getent group lpadmin)" ] ; then
-              addgroup --system lpadmin
-            fi
-            adduser "$USER" lpadmin
+          if [ -z "$(getent group lpadmin)" ] ; then
+            addgroup --system lpadmin
           fi
+          adduser "$USER" lpadmin
         fi
       fi
     done <<EOF
