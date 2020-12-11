@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=pi-top Python SDK
 TryExec=/usr/bin/x-www-browser
-Exec=pi-top docs
+Exec=pi-top docs --open
 Icon=dictionary
 Terminal=false
 Type=Application
