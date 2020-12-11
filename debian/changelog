@@ -1,3 +1,9 @@
+pt-ui-mods (1.0.20201111) buster; urgency=medium
+
+  * rpi port: Tweaks to upgrade process
+
+ -- Mike Roberts <mike@pi-top.com>  Fri, 11 Dec 2020 13:07:43 +0000
+
 pt-ui-mods (1.0.20201110) buster; urgency=medium
 
   * pitop.core -> pitopcommon
