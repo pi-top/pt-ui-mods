@@ -19,14 +19,10 @@ Depends:
  ${misc:Depends},
  ${python3:Depends},
  ${shlibs:Depends},
-# Used in postinst
- adduser,
 # Explicitly included, as dh_shlibdeps is overridden
  libc6-dev,
-# Used by pt-further
- python3-pitop,
-# Required for pt-sdk_docs.desktop
- python3-pitop-doc,
+# Used in postinst
+ adduser,
  adapta-gtk-theme,
  breeze-cursor-theme,
  desktop-file-utils,
@@ -41,6 +37,10 @@ Depends:
  pt-icon-theme,
  pcmanfm,
  policykit-1,
+# Used by pt-further
+ python3-pitop,
+# Required for .desktop file
+ python3-pitop-doc,
  python3-notify2,
  raspberrypi-sys-mods,
  x11-xserver-utils,
