@@ -4,7 +4,7 @@ _show_messagebox() {
   local title="$1"
   local body="$2"
 
-  /usr/bin/pt-notify-send \
+  pt-notify-send \
   --expire-time 10000 \
   --icon "dialog-information" \
   "${title}" \
