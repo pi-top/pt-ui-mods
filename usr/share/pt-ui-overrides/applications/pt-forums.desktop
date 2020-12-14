@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=pi-top Forums
+Comment=Link to pi-top forums
+TryExec=/usr/bin/x-www-browser
+Exec=x-www-browser https://forum.pi-top.com/
+Icon=pt-help
+Terminal=false
+Categories=Help;

@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
 Version=1.0
-Name=pi-top Help
-Comment=Link to pi-top knowledgebase webpage
+Name=pi-top Knowledge Base
+Comment=Link to pi-top knowledge base
 TryExec=/usr/bin/x-www-browser
 Exec=x-www-browser https://knowledgebase.pi-top.com/knowledge
 Icon=pt-help
