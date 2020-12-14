@@ -1,10 +1,22 @@
 pt-ui-mods (1.1.20201114) buster; urgency=medium
 
+  * Add Barrier desktop file
+
+ -- Mike Roberts <mike@pi-top.com>  Mon, 14 Dec 2020 15:57:43 +0000
+
+pt-ui-mods (1.0.20201114) buster; urgency=medium
+
+  * Update desktop files
+
+ -- Mike Roberts <mike@pi-top.com>  Mon, 14 Dec 2020 15:56:53 +0000
+
+pt-ui-mods (1.0.20201114) buster; urgency=medium
+
   * Fix SDK docs opening command
 
  -- Mike Roberts <mike@pi-top.com>  Mon, 14 Dec 2020 14:54:57 +0000
 
-pt-ui-mods (1.1.20201112) buster; urgency=medium
+pt-ui-mods (1.0.20201112) buster; urgency=medium
 
   * Move Python SDK docs into this package
   * Remove custom ordering of directories in Help
