@@ -61,7 +61,7 @@ Recommends:
  lxplug-magnifier,
  lxplug-network,
  lxplug-ptbatt,
- lxplug-volume,
+ lxplug-volumepulse,
  onboard,
  pi-greeter,
  pi-printer-support,

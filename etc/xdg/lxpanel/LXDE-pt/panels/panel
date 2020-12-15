@@ -61,13 +61,16 @@ Plugin {
       id=chromium-browser.desktop
     }
     Button {
-      id=pcmanfm.desktop
+      id=code.desktop
+    }
+    Button {
+      id=mu.codewith.editor.desktop
     }
     Button {
       id=scratch3.desktop
     }
     Button {
-      id=mu.codewith.editor.desktop
+      id=pcmanfm.desktop
     }
     Button {
       id=lxterminal.desktop
