@@ -41,6 +41,17 @@ is_first_install() {
   fi
 }
 
+add_custom_openbox_configuration() {
+  if [ ! -d "${CONF_DIR}"/openbox ]; then
+    mkdir -p "${CONF_DIR}"/openbox
+  fi
+  cp /etc/xdg/openbox/rc.xml "${CONF_DIR}"/openbox
+
+  # disable keyboard shortcuts
+  keyboard_binding="<keybind key='A-Tab'> <action name='NextWindow'> <dialog>no</dialog> <bar>no</bar> </action> </keybind>"
+  sed ':a;N;$!ba; s@<keyboard>.*<\/keyboard>@<keyboard>'"${keyboard_binding}"'<\/keyboard>@g' "${CONF_DIR}"/openbox/rc.xml
+}
+
 case "${1}" in
   configure)
 
@@ -81,6 +92,8 @@ case "${1}" in
             mkdir -p /root/.config/lxterminal
           fi
           cp /usr/share/pt-ui-overrides/lxterminal.conf /root/.config/lxterminal/
+
+          add_custom_openbox_configuration
 
         elif dpkg --compare-versions "${2}" lt "1.0.20201111"; then
           if [ -z "$(getent group lpadmin)" ] ; then

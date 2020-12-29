@@ -1,3 +1,9 @@
+pt-ui-mods (1.4.0) buster; urgency=medium
+
+  * Add custom openbox configuration to use on onboarding
+
+ -- Jorge Capona <jorge@pi-top.com>  Tue, 29 Dec 2020 16:15:17 -0300
+
 pt-ui-mods (1.3.20201115) buster; urgency=medium
 
   * 'lxplug-volume' --> 'lxplug-volumepulse'
