@@ -49,7 +49,7 @@ add_custom_openbox_configuration() {
 
   # disable keyboard shortcuts
   keyboard_binding="<keybind key='A-Tab'> <action name='NextWindow'> <dialog>no</dialog> <bar>no</bar> </action> </keybind>"
-  sed ':a;N;$!ba; s@<keyboard>.*<\/keyboard>@<keyboard>'"${keyboard_binding}"'<\/keyboard>@g' "${CONF_DIR}"/openbox/rc.xml
+  sed -i ':a;N;$!ba; s@<keyboard>.*<\/keyboard>@<keyboard>'"${keyboard_binding}"'<\/keyboard>@g' "${CONF_DIR}"/openbox/rc.xml
 }
 
 case "${1}" in
