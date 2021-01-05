@@ -1,0 +1,1 @@
+rm_conffile /etc/polkit-1/localauthority.conf.d/60-desktop-policy.conf 1.3.20201231
