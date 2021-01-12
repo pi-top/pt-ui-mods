@@ -1,3 +1,9 @@
+pt-ui-mods (1.3.20210112) buster; urgency=medium
+
+  * Remove pt-touchegg
+
+ -- Jorge Capona <jorge@pi-top.com>  Tue, 12 Jan 2021 15:51:41 -0300
+
 pt-ui-mods (1.3.20210105) buster; urgency=medium
 
   * rpi port: Remove 60-desktop-policy.conf in favour of
