@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Touché - Configure Multi-Touch Gestures
+GenericName=Multi-touch Gestures
+Comment=Configure Touchégg multi-touch gestures
+Categories=Utility;GTK;
+Exec=com.github.joseexposito.touche
+Icon=com.github.joseexposito.touche
+Terminal=false
+Type=Application
+StartupNotify=true
+Keywords=Touchégg;Multi-touch;Gestures;Touchpad;Trackpad;Touchscreen;
