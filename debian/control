@@ -8,7 +8,7 @@ Build-Depends:
 Standards-Version: 4.5.0
 
 Package: pt-ui-mods
-Architecture: all
+Architecture: any
 Replaces:
  raspberrypi-ui-mods,
 Breaks:
