@@ -69,6 +69,7 @@ Recommends:
  pi-printer-support,
  pimixer,
  pt-shutdown-helper,
+ raspi2png,
  rc-gui (>=1.18),
  rp-bookshelf,
  scrot,
