@@ -23,7 +23,6 @@ Depends:
  libc6-dev,
 # Used in postinst
  adduser,
- autorandr,
  adapta-gtk-theme,
  breeze-cursor-theme,
  desktop-file-utils,
