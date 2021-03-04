@@ -38,7 +38,7 @@ Depends:
  pcmanfm,
  policykit-1,
 # Used by pt-further
- python3-pitop,
+ python3-pitopcommon,
 # Required for .desktop file
  python3-pitop-doc,
  python3-notify2,
