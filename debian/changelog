@@ -1,6 +1,6 @@
 pt-ui-mods (1.4.20210707) buster; urgency=medium
 
-  * Bump version to avoid conflicts with raspberrypi-sys-mods
+  * raspberrypi-sys-mods now handles allowing plugdev group to mount disks
 
  -- pi-top <deb-maintainers@pi-top.com>  Wed, 07 Jul 2021 13:42:21 +0000
 
