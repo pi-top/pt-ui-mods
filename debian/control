@@ -13,11 +13,6 @@ Replaces:
  raspberrypi-ui-mods,
 Breaks:
  raspberrypi-ui-mods,
-# Required to avoid conflict with config file allowing plugdev group
-# to mount disks
-#
-# https://github.com/RPi-Distro/raspberrypi-sys-mods/
-# commit #59fd502bd4fcf8f5f646ba6c7ad59c8756c3094e
  raspberrypi-sys-mods (<< 20210706),
 Conflicts:
  raspberrypi-ui-mods,
@@ -83,5 +78,8 @@ Recommends:
  scrot,
  system-config-printer,
  xserver-xorg-video-fbturbo,
-Description: pi-top LXDE UI Customisations
- Customised theme and configuration for LXDE desktop on Raspberry Pi.
+Description: pi-topOS LXDE UI Customisations
+ Customised theme and configuration for LXDE desktop on Raspberry Pi. Inherited
+ from raspberrypi-ui-mods, this package uses 'LXDE-pt' instead of 'LXDE-pi'
+ lxsession ID. This ensures that changes to 'raspberrypi-ui-mods' do not affect
+ the UI of pi-topOS.
