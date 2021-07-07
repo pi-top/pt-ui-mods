@@ -1,3 +1,13 @@
+pt-ui-mods (1.4.20210708) buster; urgency=medium
+
+  [ Jorge Capona ]
+  * Don't break/conflict with raspberrypi-sys-mods (#57)
+
+  [ github-actions[bot] ]
+  * [CI] Update debian/changelog for next release (#56)
+
+ -- pi-top <deb-maintainers@pi-top.com>  Wed, 07 Jul 2021 18:16:17 +0000
+
 pt-ui-mods (1.4.20210707) buster; urgency=medium
 
   * raspberrypi-sys-mods now handles allowing plugdev group to mount disks
