@@ -21,12 +21,6 @@ Breaks:
  raspberrypi-sys-mods (<< 20210706),
 Conflicts:
  raspberrypi-ui-mods,
-# Required to avoid conflict with config file allowing plugdev group
-# to mount disks
-#
-# https://github.com/RPi-Distro/raspberrypi-sys-mods/
-# commit #59fd502bd4fcf8f5f646ba6c7ad59c8756c3094e
- raspberrypi-sys-mods (<< 20210706),
 Depends:
  ${misc:Depends},
  ${python3:Depends},
