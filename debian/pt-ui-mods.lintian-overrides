@@ -4,5 +4,3 @@ pt-ui-mods: no-manual-page usr/bin/pt-scrot
 pt-ui-mods: no-manual-page usr/bin/startlxde-pt
 # False positive: Command with path is part of a search and replace operation
 pt-ui-mods: command-with-path-in-maintainer-script
-# Required to avoid conflict with config file allowing plugdev group to mount disks
-pt-ui-mods: conflicts-with-version raspberrypi-sys-mods (<< 20210706)
